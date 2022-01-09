@@ -23,7 +23,7 @@ import argparse
 # - National Health Insurance Fund (in Bulgarian, НЗОК):            8%
 #
 # The first two are payable by everyone. The last one (health insurance) is
-# only payable by citizens and those who have permanent residence permit.
+# only payable by EU citizens and those who have permanent residence permit.
 # To get the actual percentage, use the soc_sec_factor function, which uses
 # those constants and returns the total percentage based on the --citizen flag.
 SOCIAL_SECURITY_FACTOR_MAIN = 0.148 + 0.05
@@ -121,7 +121,7 @@ def plot_func(x):
     y_individual = list(map(lambda gross: 1 - get_net_individual(gross) / gross, x))
 
     plt.title(f"Percentage of income to be paid in taxes and other expenses in {args.year},\n"
-            f"if you {'HAVE' if args.citizen else 'DO NOT HAVE'} Bulgarian citizenship "
+            f"if you {'HAVE' if args.citizen else 'DO NOT HAVE'} EU citizenship "
             "or permanent residence permit")
 
     plt.plot(x, y_company, label='Company')
