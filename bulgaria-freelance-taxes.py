@@ -124,7 +124,7 @@ def plot_func(x):
             f"if you {'HAVE' if args.citizen else 'DO NOT HAVE'} EU citizenship "
             "or permanent residence permit")
 
-    plt.plot(x, y_company, label='Company')
+    plt.plot(x, y_company, label='Dividends from Company')
     plt.plot(x, y_individual, label='Individual')
 
     plt.legend()
