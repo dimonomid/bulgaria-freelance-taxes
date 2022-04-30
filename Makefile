@@ -30,4 +30,4 @@ output/2021_%: | output
 	python3 ./bulgaria-freelance-taxes.py --year 2021 --socsec-base-min 650 --socsec-base-max 3000 $(if $(findstring citizen,$@),--citizen,) --output $@
 
 output/2022_%: | output
-	python3 ./bulgaria-freelance-taxes.py --year 2022 --socsec-base-min 710 --socsec-base-max 3000 $(if $(findstring citizen,$@),--citizen,) --output $@
+	python3 ./bulgaria-freelance-taxes.py --year 2022 --socsec-base-min 710 --socsec-base-max 3400 $(if $(findstring citizen,$@),--citizen,) --output $@
