@@ -115,7 +115,7 @@ def get_net_individual(gross):
 
 def plot_func(x):
     # Generate 100 datapoints
-    x = np.linspace(x[0], x[1], 100)
+    x = np.linspace(x[0], x[1], 200)
 
     y_company    = list(map(lambda gross: 1 - get_net_company(gross)    / gross, x))
     y_individual = list(map(lambda gross: 1 - get_net_individual(gross) / gross, x))
