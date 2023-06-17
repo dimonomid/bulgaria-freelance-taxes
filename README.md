@@ -11,7 +11,7 @@ together.
 This repo only contains a script to generate the charts, as well as the
 resulting charts like this one:
 
-![](output/2022_foreigner.png)
+![](output/2023_foreigner.png)
 
 See full article: [Bulgaria Freelance Taxes: Detailed Breakdown](https://dmitryfrank.com/articles/bulgaria_freelance_taxes)
 

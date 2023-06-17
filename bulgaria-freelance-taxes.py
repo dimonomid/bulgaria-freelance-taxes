@@ -40,13 +40,13 @@ DIVIDEND_TAX_FACTOR = 0.05
 RECOGNIZED_EXPENSES_INDIVIDUAL = 0.25
 
 # Fixed business-related expenses which don't depend on the income. I include
-# accountant fees here (150 BGN) plus bank fees for having two bank accounts
-# (for an individual it's about 5 BGN, and for the company it's 15 BGN).
+# accountant fees here (250 BGN) plus bank fees for having two bank accounts
+# (for an individual it's about 10 BGN, and for the company it's 20 BGN).
 
 # Those numbers can of course vary depending on the accountant and the bank you
 # choose, but those are definitely doable.
-FIXED_EXPENSES_INDIVIDUAL = 150 + 5
-FIXED_EXPENSES_COMPANY = 150 + 15
+FIXED_EXPENSES_INDIVIDUAL = 250 + 10
+FIXED_EXPENSES_COMPANY = 250 + 20
 
 parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 

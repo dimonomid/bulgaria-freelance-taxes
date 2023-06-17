@@ -8,7 +8,9 @@ all: output/2018_foreigner.png \
      output/2021_foreigner.png \
      output/2021_citizen.png   \
      output/2022_foreigner.png \
-     output/2022_citizen.png
+     output/2022_citizen.png \
+     output/2023_foreigner.png \
+     output/2023_citizen.png
 
 .PHONY: clean
 clean:
@@ -31,3 +33,6 @@ output/2021_%: | output
 
 output/2022_%: | output
 	python3 ./bulgaria-freelance-taxes.py --year 2022 --socsec-base-min 710 --socsec-base-max 3400 $(if $(findstring citizen,$@),--citizen,) --output $@
+
+output/2023_%: | output
+	python3 ./bulgaria-freelance-taxes.py --year 2023 --socsec-base-min 710 --socsec-base-max 3400 $(if $(findstring citizen,$@),--citizen,) --output $@
